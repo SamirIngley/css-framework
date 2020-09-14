@@ -1,0 +1,58 @@
+:root {
+    --main-bg-color: rgba(44, 191, 44, 0.694);
+
+}
+
+
+.body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: var(--main-bg-color);
+}
+
+.navbar > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: stretch;
+}
+
+.navbar h1 {
+    color: rgba(17, 98, 238, 0.66);
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: flex;
+    padding: 1em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 100%;
+    transition: 400ms;
+}
+
+.navbar a:hover {
+    color: var(--main-bg-color);
+    background-color: white;
+}
