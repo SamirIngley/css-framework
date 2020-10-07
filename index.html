@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
     <title>Framework</title>
 </head>
 <body>
@@ -18,6 +19,18 @@
     </ul>
   </div>
 
+  <pre>
+    &#x3C;div class=&#x22;navbar&#x22;&#x3E;
+      &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;&#x3C;h1 class=&#x22;title&#x22;&#x3E;PLANT&#x3C;/h1&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Link 4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+  </pre>
+
   <div class="headings">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -27,6 +40,15 @@
     <h6>Heading 6</h6>
   </div>
 
+  <pre>
+    &#x3C;h1&#x3E;Heading 1&#x3C;/h1&#x3E;
+    &#x3C;h2&#x3E;Heading 2&#x3C;/h2&#x3E;
+    &#x3C;h3&#x3E;Heading 3&#x3C;/h3&#x3E;
+    &#x3C;h4&#x3E;Heading 4&#x3C;/h4&#x3E;
+    &#x3C;h5&#x3E;Heading 5&#x3C;/h5&#x3E;
+    &#x3C;h6&#x3E;Heading 6&#x3C;/h6&#x3E;
+  </pre>
+
   <div class="paragraph">
     <p>This is a great paragraph! You can talk about</p>
     <p>anything you want to talk about, I loved going</p>
@@ -34,24 +56,154 @@
     <p>best time.</p>
   </div>
 
+  <pre>
+    &#x3C;div class=&#x22;paragraph&#x22;&#x3E;
+  </pre>
+
+  <div class="cardtainer">
+    <article class="card">
+      <header class="card-header">
+        <p>Sep 11th 2020</p>
+        <h2>Never forget</h2>
+      </header>
+
+      <div class="card-author">
+        <a class="author-avatar" href="#">
+          <img src="avatar.png" />
+        </a>
+        <svg class="half-circle" viewBox="0 0 106 57">
+          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+
+        <div class="author-name">
+          <div class="author-name-prefix">Author</div>
+          Mitchell Hudson
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+        <header class="card-header">
+          <p>Sep 11th 2020</p>
+          <h2>Card Tricks are fun!</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://api.adorable.io/avatars/172/a.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Pirate</div>
+            Zheng Zhilong
+          </div>
+        </div>
+        <div class="tags">
+          <a href="#">html</a>
+          <a href="#">css</a>
+        </div>
+    </article>
+
+    <article class="card">
+        <header class="card-header">
+          <p>Sep 11th 2020</p>
+          <h2>Card Tricks are fun!</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://api.adorable.io/avatars/172/b.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Pirate</div>
+            Francis Drake
+          </div>
+        </div>
+        <div class="tags">
+          <a href="#">html</a>
+          <a href="#">css</a>
+        </div>
+    </article>
+  </div>
+    <div class="tags">
+      <a href="#">html</a>
+      <a href="#">css</a>
+      <a href="#">web-dev</a>
+    </div>
+  <pre>
+    &#x3C;article class=&#x22;card&#x22;&#x3E;
+      &#x3C;header class=&#x22;card-header&#x22;&#x3E;
+        &#x3C;p&#x3E;Sep 11th 2020&#x3C;/p&#x3E;
+        &#x3C;h2&#x3E;Never forget&#x3C;/h2&#x3E;
+      &#x3C;/header&#x3E;
+
+      &#x3C;div class=&#x22;card-author&#x22;&#x3E;
+        &#x3C;a class=&#x22;author-avatar&#x22; href=&#x22;#&#x22;&#x3E;
+          &#x3C;img src=&#x22;avatar.png&#x22; /&#x3E;
+        &#x3C;/a&#x3E;
+        &#x3C;svg class=&#x22;half-circle&#x22; viewBox=&#x22;0 0 106 57&#x22;&#x3E;
+          &#x3C;path d=&#x22;M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4&#x22;&#x3E;&#x3C;/path&#x3E;
+        &#x3C;/svg&#x3E;
+
+        &#x3C;div class=&#x22;author-name&#x22;&#x3E;
+          &#x3C;div class=&#x22;author-name-prefix&#x22;&#x3E;Author&#x3C;/div&#x3E;
+          Mitchell Hudson
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/article&#x3E;
+  </pre>
+  
+
   <div class="forms">
     <input class="email" type="text" placeholder="Email">
     <input class="pass"type="text" placeholder="Password">
   </div>
+
+  <pre>
+    &#x3C;div class=&#x22;forms&#x22;&#x3E;
+    &#x3C;input class=&#x22;email&#x22; type=&#x22;text&#x22; placeholder=&#x22;Email&#x22;&#x3E;
+    &#x3C;input class=&#x22;pass&#x22;type=&#x22;text&#x22; placeholder=&#x22;Password&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+  </pre>
 
   <div class="buttons">
     <a class="b1" href="#">Sign Up</a>
     <a class="b2" href="#">Login</a>
   </div>
 
+  <pre>
+    &#x3C;div class=&#x22;buttons&#x22;&#x3E;
+    &#x3C;a class=&#x22;b1&#x22; href=&#x22;#&#x22;&#x3E;Sign Up&#x3C;/a&#x3E;
+    &#x3C;a class=&#x22;b2&#x22; href=&#x22;#&#x22;&#x3E;Login&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+  </pre>
+
   <label class="container">Check
     <input type="checkbox" checked="checked">
     <span class="checkmark"></span>
   </label>
 
+  <pre>
+    &#x3C;label class=&#x22;container&#x22;&#x3E;Check
+    &#x3C;input type=&#x22;checkbox&#x22; checked=&#x22;checked&#x22;&#x3E;
+    &#x3C;span class=&#x22;checkmark&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/label&#x3E;
+  </pre>
+
   <hello-world>Inner Text</hello-world>
   <hello-world>Inner Text</hello-world>
   <hello-world>Inner Text</hello-world>
+
+  <pre>
+    &#x3C;hello-world&#x3E;Inner Text&#x3C;/hello-world&#x3E;
+  </pre>
   
   <script src="index.js"></script>
 </body>

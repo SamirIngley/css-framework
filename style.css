@@ -17,7 +17,6 @@ body {
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    background-color: white;
 }
 
 .navbar > ul {
@@ -263,3 +262,7 @@ body {
     transform: rotate(45deg);
   }
   
+.cardtainer {
+    display: flex;
+    padding: 50px;
+}
